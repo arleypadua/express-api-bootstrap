@@ -1,6 +1,7 @@
 import * as express from "express";
 import * as bodyParser from "body-parser";
 import { Express } from "express-serve-static-core";
+import { configureTodo } from "./app/api/todo/todo.api";
 
 const lusca = require('lusca');
 
@@ -23,7 +24,8 @@ export class ExpressBuilder {
     }
 
     public configureRoutes(): ExpressBuilder {
-        // TODO: add your routes
+        configureTodo(this._app);
+        
         return this;
     }
 

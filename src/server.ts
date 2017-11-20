@@ -1,5 +1,5 @@
-import * as express from "express";
-import { ExpressBuilder } from "./src/express-builder";
+import * as express from 'express';
+import { ExpressBuilder } from './express-builder';
 
 var builder = new ExpressBuilder();
 

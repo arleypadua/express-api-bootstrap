@@ -14,3 +14,5 @@ app.listen(app.get("port"), () => {
   console.log(`App is running on port ${app.get("port")} in ${app.get("env")} mode`);
   console.log('In order to stop the application, press Ctrl + C');
 });
+
+module.exports = app;

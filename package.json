@@ -4,7 +4,9 @@
   "description": "api bootstrap",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build && node ./dist/server.js",
+    "build": "tsc"
   },
   "author": "Arley Padua",
   "license": "ISC",

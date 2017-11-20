@@ -1,8 +1,8 @@
 import * as express from "express";
 import * as bodyParser from "body-parser";
-import * as lusca from "lusca";
-
 import { Express } from "express-serve-static-core";
+
+const lusca = require('lusca');
 
 export class ExpressBuilder {
     private _app: Express;
